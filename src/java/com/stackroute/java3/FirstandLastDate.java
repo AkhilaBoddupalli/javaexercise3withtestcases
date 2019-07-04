@@ -5,20 +5,13 @@ import java.text.SimpleDateFormat;
 
 public class FirstandLastDate {
     public String dateCalculate() {
-//        Date thisDate=new Date();
-//        for(int i=0;i<=7;i++) {
-//            SimpleDateFormat dateForm = new SimpleDateFormat("E/MM/dd/YY");
 //
-//            return dateForm.format(thisDate);
-//
-//        }
-//        return null;
         Calendar c =GregorianCalendar.getInstance();
         SimpleDateFormat dateForm = new SimpleDateFormat("E/MM/dd/YY");
         String startDate = "", endDate = "";
-        c.set(Calendar.DAY_OF_WEEK, Calendar.TUESDAY);
+        c.set(Calendar.DAY_OF_WEEK, Calendar.TUESDAY); //sets day as Tuesday
         startDate = dateForm.format(c.getTime());
-        c.add(Calendar.DATE, 6);
+        c.add(Calendar.DATE, 6); //adds 6 days to set day
         endDate = dateForm.format(c.getTime());
         String date = startDate + "," + endDate;
 

@@ -58,6 +58,14 @@ public class ConsecutiveNumbersTest {
         //Assert
         assertEquals("","not consecutive numbers",result);
     }
+    public void givenSeriesOfNegativeNumbersShouldReturnConsecutiveNumbers() {
+        //Act
+
+
+        String result = obj.consecutiveSeriesCheck(new int[]{-9,-8,-7,-6,-5,-4,-3});
+        //Assert
+        assertEquals("","not consecutive numbers",result);
+    }
 
 
 

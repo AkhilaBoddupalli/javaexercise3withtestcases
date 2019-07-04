@@ -9,7 +9,7 @@ public class ChessBoard
         {
             for(int j=0;j<8;j++)
             {
-                if(i+j%2==0)
+                if(i+j%2==0) //it considers the row and coloumn of the matrix and prints WW for even place and BB for odd
                 {
                     return "WW|";
                 }

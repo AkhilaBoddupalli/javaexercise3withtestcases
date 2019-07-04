@@ -58,6 +58,14 @@ public class StudentMarksTest {
         //Assert
         assertEquals("","",result);
     }
+    public void givenNumberOfStudentsandNegativeGradesShouldReturnNothing() {
+        //Act
+
+
+        boolean result = obj.checkStudentGrades(0,new int[]{-20,-30});
+        //Assert
+        assertEquals("","",result);
+    }
 
 
 }

@@ -38,7 +38,7 @@ public class AdditionofMatrices
         for (i = 0; i < m; i++)
         {
             for (j = 0; j < n; j++)
-                System.out.print(sum[i][j]+"\t");
+                System.out.print(sum[i][j]+"\t"); //display matrix on the console
 
             System.out.println();
         }

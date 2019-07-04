@@ -17,7 +17,7 @@ public class ExceptionConstructor extends Exception{
         {
             System.out.println("Caught the exception");
 
-            // Print the message from MyException object
+            // Print the message from Exception object
             System.out.println(e.getMessage());
         }
        finally

@@ -12,7 +12,7 @@ public class Removevowel
 
             for (int j = 0; j < str.length(); j++)
             {
-                char a = str.charAt(j);
+                char a = str.charAt(j); //if vowel is present replaces with null
                 if (str.charAt(j) == 'a') {
                     str = str.replace("a", "");
                 } else if (str.charAt(j) == 'e') {
